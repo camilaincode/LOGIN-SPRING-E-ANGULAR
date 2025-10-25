@@ -4,6 +4,11 @@
             <div class="card-body">
                 <h5 class="card-title">Resposta Backend</h5>
                 <p class="card-text">Conteudo:</p>
+                <ul>
+                    @for (line of data; track line) {
+                    <li>{{ line }}</li>
+                    }
+                </ul>
             </div>
         </div>
     </div>
