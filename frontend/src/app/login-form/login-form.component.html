@@ -1,0 +1,17 @@
+<div class="row justify-content-center">
+    <div class="col-4">
+        <form (ngSubmit)="onSubmitLogin()" #loginForm="ngForm">
+            <div class="form-outline mb-4">
+                <label for="LoginName">Username</label>
+                <input class="form-control" type="login" id="LoginName" name="login" [(ngModel)]="login" />
+            </div>
+
+            <div class="form-outline mb-4">
+                <label for="LoginPassword">Password</label>
+                <input class="form-control" type="password" id="LoginPassword" name="passowrd" [(ngModel)]="password" />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block md-4">Sign In</button>
+        </form>
+    </div>
+</div>
